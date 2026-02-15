@@ -318,12 +318,12 @@
     "budget": {
       "agentic": "xiaomi/mimo-v2-flash",
       "embedding": "sentence-transformers/all-MiniLM-L6-v2",
-      "text-generation": "anthropic/claude-haiku-3.5"
+      "text-generation": "mistralai/mistral-nemo"
     },
     "free": {
-      "agentic": "google/gemini-2.0-flash-001",
+      "agentic": "openai/gpt-oss-120b:free",
       "embedding": "sentence-transformers/all-MiniLM-L6-v2",
-      "text-generation": "google/gemini-2.0-flash-001"
+      "text-generation": "deepseek/deepseek-r1-0528:free"
     },
     "premium": {
       "agentic": "anthropic/claude-sonnet-4",
