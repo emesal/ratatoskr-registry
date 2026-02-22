@@ -1531,11 +1531,11 @@
     "budget": {
       "agentic": {
         "model": "xiaomi/mimo-v2-flash",
-        "parameters": { "temperature": 0.3, "top_p": 0.95 }
+        "parameters": { "temperature": 0.8 }
       },
       "coding": {
         "model": "xiaomi/mimo-v2-flash",
-        "parameters": { "temperature": 0.3, "top_p": 0.95 }
+        "parameters": { "temperature": 0.3 }
       },
       "embedding": "sentence-transformers/all-MiniLM-L6-v2",
       "summariser": "meta-llama/llama-3.3-70b-instruct",
