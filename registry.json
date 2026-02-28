@@ -12,38 +12,7 @@
         "dimensions": null
       },
       "parameters": {
-        "top_p": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 1.0
-          }
-        },
         "tools": {
-          "availability": "opaque"
-        },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
-        },
-        "max_tokens": {
-          "availability": "opaque"
-        },
-        "include_reasoning": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "reasoning": {
-          "availability": "opaque"
-        },
-        "stop": {
           "availability": "opaque"
         },
         "temperature": {
@@ -54,6 +23,37 @@
           }
         },
         "response_format": {
+          "availability": "opaque"
+        },
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "reasoning": {
+          "availability": "opaque"
+        },
+        "top_p": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
+          }
+        },
+        "include_reasoning": {
+          "availability": "opaque"
+        },
+        "tool_choice": {
+          "availability": "opaque"
+        },
+        "stop": {
           "availability": "opaque"
         }
       },
@@ -74,6 +74,21 @@
         "dimensions": null
       },
       "parameters": {
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "include_reasoning": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
         "temperature": {
           "availability": "mutable",
           "range": {
@@ -81,25 +96,13 @@
             "max": 2.0
           }
         },
-        "max_tokens": {
-          "availability": "opaque"
-        },
         "tool_choice": {
           "availability": "opaque"
         },
-        "response_format": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "reasoning": {
-          "availability": "opaque"
-        },
-        "tools": {
-          "availability": "opaque"
-        },
         "stop": {
+          "availability": "opaque"
+        },
+        "verbosity": {
           "availability": "opaque"
         },
         "top_k": {
@@ -108,10 +111,7 @@
             "min": 0.0
           }
         },
-        "verbosity": {
-          "availability": "opaque"
-        },
-        "include_reasoning": {
+        "reasoning": {
           "availability": "opaque"
         },
         "top_p": {
@@ -166,19 +166,19 @@
             "min": 0.0
           }
         },
-        "tools": {
-          "availability": "opaque"
-        },
-        "stop": {
-          "availability": "opaque"
-        },
         "max_tokens": {
+          "availability": "opaque"
+        },
+        "reasoning": {
+          "availability": "opaque"
+        },
+        "tools": {
           "availability": "opaque"
         },
         "tool_choice": {
           "availability": "opaque"
         },
-        "reasoning": {
+        "stop": {
           "availability": "opaque"
         }
       },
@@ -199,19 +199,22 @@
         "dimensions": null
       },
       "parameters": {
-        "include_reasoning": {
-          "availability": "opaque"
-        },
-        "tools": {
-          "availability": "opaque"
-        },
-        "response_format": {
+        "reasoning": {
           "availability": "opaque"
         },
         "tool_choice": {
           "availability": "opaque"
         },
-        "verbosity": {
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "include_reasoning": {
+          "availability": "opaque"
+        },
+        "tools": {
           "availability": "opaque"
         },
         "top_k": {
@@ -220,14 +223,7 @@
             "min": 0.0
           }
         },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
-        },
-        "reasoning": {
+        "verbosity": {
           "availability": "opaque"
         },
         "stop": {
@@ -243,8 +239,12 @@
             "max": 1.0
           }
         },
-        "max_tokens": {
-          "availability": "opaque"
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
         }
       },
       "pricing": {
@@ -264,8 +264,21 @@
         "dimensions": null
       },
       "parameters": {
-        "tools": {
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "response_format": {
           "availability": "opaque"
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
+          }
         },
         "top_p": {
           "availability": "mutable",
@@ -274,27 +287,14 @@
             "max": 1.0
           }
         },
-        "response_format": {
+        "structured_outputs": {
           "availability": "opaque"
         },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
-        },
-        "structured_outputs": {
+        "tools": {
           "availability": "opaque"
         },
         "max_tokens": {
           "availability": "opaque"
-        },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
         }
       },
       "pricing": {
@@ -313,20 +313,7 @@
         "dimensions": null
       },
       "parameters": {
-        "stop": {
-          "availability": "opaque"
-        },
         "repetition_penalty": {
-          "availability": "opaque"
-        },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
-        },
-        "include_reasoning": {
           "availability": "opaque"
         },
         "min_p": {
@@ -339,11 +326,8 @@
             "max": 2.0
           }
         },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
+        "max_tokens": {
+          "availability": "opaque"
         },
         "top_p": {
           "availability": "mutable",
@@ -351,9 +335,6 @@
             "min": 0.0,
             "max": 1.0
           }
-        },
-        "max_tokens": {
-          "availability": "opaque"
         },
         "reasoning": {
           "availability": "opaque"
@@ -363,6 +344,25 @@
           "range": {
             "min": -2.0,
             "max": 2.0
+          }
+        },
+        "include_reasoning": {
+          "availability": "opaque"
+        },
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "stop": {
+          "availability": "opaque"
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
           }
         }
       },
@@ -383,8 +383,23 @@
         "dimensions": null
       },
       "parameters": {
+        "stop": {
+          "availability": "opaque"
+        },
         "tools": {
           "availability": "opaque"
+        },
+        "seed": {
+          "availability": "opaque"
+        },
+        "tool_choice": {
+          "availability": "opaque"
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 1.0
+          }
         },
         "top_p": {
           "availability": "mutable",
@@ -393,13 +408,7 @@
             "max": 1.0
           }
         },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "stop": {
-          "availability": "opaque"
-        },
-        "response_format": {
+        "max_tokens": {
           "availability": "opaque"
         },
         "structured_outputs": {
@@ -412,22 +421,13 @@
             "max": 2.0
           }
         },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 1.0
-          }
-        },
-        "seed": {
-          "availability": "opaque"
-        },
-        "max_tokens": {
+        "response_format": {
           "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.1,
-        "completion_cost_per_mtok": 0.4
+        "prompt_cost_per_mtok": 0.09999999999999999,
+        "completion_cost_per_mtok": 0.39999999999999997
       },
       "max_output_tokens": 8192
     },
@@ -442,35 +442,7 @@
         "dimensions": null
       },
       "parameters": {
-        "response_format": {
-          "availability": "opaque"
-        },
-        "reasoning": {
-          "availability": "opaque"
-        },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
-        },
         "structured_outputs": {
-          "availability": "opaque"
-        },
-        "max_tokens": {
-          "availability": "opaque"
-        },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "include_reasoning": {
-          "availability": "opaque"
-        },
-        "stop": {
-          "availability": "opaque"
-        },
-        "tools": {
           "availability": "opaque"
         },
         "top_p": {
@@ -480,13 +452,41 @@
             "max": 1.0
           }
         },
+        "reasoning": {
+          "availability": "opaque"
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "stop": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
+        "tool_choice": {
+          "availability": "opaque"
+        },
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "max_tokens": {
+          "availability": "opaque"
+        },
         "seed": {
+          "availability": "opaque"
+        },
+        "include_reasoning": {
           "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.1,
-        "completion_cost_per_mtok": 0.4
+        "prompt_cost_per_mtok": 0.09999999999999999,
+        "completion_cost_per_mtok": 0.39999999999999997
       },
       "max_output_tokens": 65535
     },
@@ -501,23 +501,12 @@
         "dimensions": null
       },
       "parameters": {
-        "tools": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "max_tokens": {
-          "availability": "opaque"
-        },
-        "response_format": {
-          "availability": "opaque"
-        },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "reasoning": {
-          "availability": "opaque"
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
         },
         "top_p": {
           "availability": "mutable",
@@ -526,20 +515,31 @@
             "max": 1.0
           }
         },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "reasoning": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
         "seed": {
+          "availability": "opaque"
+        },
+        "include_reasoning": {
           "availability": "opaque"
         },
         "stop": {
           "availability": "opaque"
         },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
+        "max_tokens": {
+          "availability": "opaque"
         },
-        "include_reasoning": {
+        "tool_choice": {
           "availability": "opaque"
         }
       },
@@ -560,11 +560,18 @@
         "dimensions": null
       },
       "parameters": {
+        "structured_outputs": {
+          "availability": "opaque"
+        },
         "top_logprobs": {
           "availability": "opaque"
         },
-        "logprobs": {
-          "availability": "opaque"
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
         },
         "presence_penalty": {
           "availability": "mutable",
@@ -573,38 +580,13 @@
             "max": 2.0
           }
         },
-        "frequency_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "tools": {
-          "availability": "opaque"
-        },
-        "seed": {
-          "availability": "opaque"
-        },
-        "min_p": {
-          "availability": "opaque"
-        },
-        "max_tokens": {
-          "availability": "opaque"
-        },
-        "response_format": {
+        "repetition_penalty": {
           "availability": "opaque"
         },
         "tool_choice": {
           "availability": "opaque"
         },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
-        },
-        "stop": {
+        "logprobs": {
           "availability": "opaque"
         },
         "top_p": {
@@ -617,22 +599,40 @@
         "logit_bias": {
           "availability": "opaque"
         },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "temperature": {
+        "frequency_penalty": {
           "availability": "mutable",
           "range": {
-            "min": 0.0,
+            "min": -2.0,
             "max": 2.0
           }
         },
-        "repetition_penalty": {
+        "response_format": {
+          "availability": "opaque"
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
+          }
+        },
+        "min_p": {
+          "availability": "opaque"
+        },
+        "stop": {
+          "availability": "opaque"
+        },
+        "seed": {
+          "availability": "opaque"
+        },
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "tools": {
           "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.1,
+        "prompt_cost_per_mtok": 0.09999999999999999,
         "completion_cost_per_mtok": 0.32
       },
       "max_output_tokens": 16384
@@ -648,12 +648,6 @@
         "dimensions": null
       },
       "parameters": {
-        "stop": {
-          "availability": "opaque"
-        },
-        "tool_choice": {
-          "availability": "opaque"
-        },
         "temperature": {
           "availability": "mutable",
           "range": {
@@ -661,23 +655,11 @@
             "max": 2.0
           }
         },
-        "top_k": {
+        "frequency_penalty": {
           "availability": "mutable",
           "range": {
-            "min": 0.0
-          }
-        },
-        "seed": {
-          "availability": "opaque"
-        },
-        "tools": {
-          "availability": "opaque"
-        },
-        "top_p": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 1.0
+            "min": -2.0,
+            "max": 2.0
           }
         },
         "presence_penalty": {
@@ -687,15 +669,33 @@
             "max": 2.0
           }
         },
+        "tool_choice": {
+          "availability": "opaque"
+        },
         "max_tokens": {
           "availability": "opaque"
         },
-        "frequency_penalty": {
+        "stop": {
+          "availability": "opaque"
+        },
+        "top_k": {
           "availability": "mutable",
           "range": {
-            "min": -2.0,
-            "max": 2.0
+            "min": 0.0
           }
+        },
+        "top_p": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "tools": {
+          "availability": "opaque"
+        },
+        "seed": {
+          "availability": "opaque"
         }
       },
       "pricing": {
@@ -715,33 +715,10 @@
         "dimensions": null
       },
       "parameters": {
-        "presence_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "stop": {
-          "availability": "opaque"
-        },
-        "response_format": {
-          "availability": "opaque"
-        },
         "max_tokens": {
           "availability": "opaque"
         },
-        "seed": {
-          "availability": "opaque"
-        },
-        "frequency_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "structured_outputs": {
+        "response_format": {
           "availability": "opaque"
         },
         "tool_choice": {
@@ -761,12 +738,35 @@
             "max": 2.0
           }
         },
+        "presence_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "stop": {
+          "availability": "opaque"
+        },
+        "frequency_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
+        },
         "tools": {
+          "availability": "opaque"
+        },
+        "seed": {
           "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.4,
+        "prompt_cost_per_mtok": 0.39999999999999997,
         "completion_cost_per_mtok": 2.0
       }
     },
@@ -791,7 +791,14 @@
         "tool_choice": {
           "availability": "opaque"
         },
-        "max_tokens": {
+        "presence_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
+        },
+        "response_format": {
           "availability": "opaque"
         },
         "top_p": {
@@ -801,17 +808,19 @@
             "max": 1.0
           }
         },
+        "tools": {
+          "availability": "opaque"
+        },
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "stop": {
+          "availability": "opaque"
+        },
         "temperature": {
           "availability": "mutable",
           "range": {
             "min": 0.0,
-            "max": 2.0
-          }
-        },
-        "presence_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
             "max": 2.0
           }
         },
@@ -820,19 +829,10 @@
         },
         "seed": {
           "availability": "opaque"
-        },
-        "stop": {
-          "availability": "opaque"
-        },
-        "response_format": {
-          "availability": "opaque"
-        },
-        "tools": {
-          "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.4,
+        "prompt_cost_per_mtok": 0.39999999999999997,
         "completion_cost_per_mtok": 2.0
       }
     },
@@ -854,7 +854,36 @@
             "max": 1.0
           }
         },
+        "frequency_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
+        },
+        "tool_choice": {
+          "availability": "opaque"
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "stop": {
+          "availability": "opaque"
+        },
         "tools": {
+          "availability": "opaque"
+        },
+        "presence_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "seed": {
           "availability": "opaque"
         },
         "temperature": {
@@ -864,41 +893,12 @@
             "max": 2.0
           }
         },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "stop": {
-          "availability": "opaque"
-        },
-        "response_format": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
         "max_tokens": {
           "availability": "opaque"
-        },
-        "seed": {
-          "availability": "opaque"
-        },
-        "frequency_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "presence_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.1,
+        "prompt_cost_per_mtok": 0.09999999999999999,
         "completion_cost_per_mtok": 0.3
       }
     },
@@ -913,8 +913,12 @@
         "dimensions": null
       },
       "parameters": {
-        "min_p": {
-          "availability": "opaque"
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
         },
         "frequency_penalty": {
           "availability": "mutable",
@@ -926,12 +930,6 @@
         "repetition_penalty": {
           "availability": "opaque"
         },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
-        },
         "presence_penalty": {
           "availability": "mutable",
           "range": {
@@ -939,32 +937,16 @@
             "max": 2.0
           }
         },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
         "stop": {
           "availability": "opaque"
-        },
-        "max_tokens": {
-          "availability": "opaque"
-        },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
         },
         "seed": {
           "availability": "opaque"
         },
-        "response_format": {
-          "availability": "opaque"
-        },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "tools": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
+        "min_p": {
           "availability": "opaque"
         },
         "top_p": {
@@ -973,6 +955,24 @@
             "min": 0.0,
             "max": 1.0
           }
+        },
+        "tools": {
+          "availability": "opaque"
+        },
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
+          }
+        },
+        "tool_choice": {
+          "availability": "opaque"
         }
       },
       "pricing": {
@@ -992,20 +992,7 @@
         "dimensions": null
       },
       "parameters": {
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
-        },
-        "top_p": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 1.0
-          }
-        },
-        "seed": {
+        "max_tokens": {
           "availability": "opaque"
         },
         "frequency_penalty": {
@@ -1015,8 +1002,21 @@
             "max": 2.0
           }
         },
-        "max_tokens": {
+        "seed": {
           "availability": "opaque"
+        },
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
+          }
         },
         "presence_penalty": {
           "availability": "mutable",
@@ -1025,11 +1025,11 @@
             "max": 2.0
           }
         },
-        "temperature": {
+        "top_p": {
           "availability": "mutable",
           "range": {
             "min": 0.0,
-            "max": 2.0
+            "max": 1.0
           }
         },
         "repetition_penalty": {
@@ -1052,14 +1052,13 @@
         "dimensions": null
       },
       "parameters": {
-        "tool_choice": {
+        "tools": {
           "availability": "opaque"
         },
-        "top_p": {
+        "top_k": {
           "availability": "mutable",
           "range": {
-            "min": 0.0,
-            "max": 1.0
+            "min": 0.0
           }
         },
         "temperature": {
@@ -1069,23 +1068,10 @@
             "max": 2.0
           }
         },
-        "max_tokens": {
-          "availability": "opaque"
-        },
-        "response_format": {
+        "tool_choice": {
           "availability": "opaque"
         },
         "structured_outputs": {
-          "availability": "opaque"
-        },
-        "presence_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "tools": {
           "availability": "opaque"
         },
         "frequency_penalty": {
@@ -1095,13 +1081,27 @@
             "max": 2.0
           }
         },
-        "top_k": {
+        "stop": {
+          "availability": "opaque"
+        },
+        "presence_penalty": {
           "availability": "mutable",
           "range": {
-            "min": 0.0
+            "min": -2.0,
+            "max": 2.0
           }
         },
-        "stop": {
+        "top_p": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "max_tokens": {
+          "availability": "opaque"
+        },
+        "response_format": {
           "availability": "opaque"
         }
       },
@@ -1121,15 +1121,15 @@
         "dimensions": null
       },
       "parameters": {
-        "tools": {
+        "tool_choice": {
           "availability": "opaque"
         },
-        "tool_choice": {
+        "tools": {
           "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.1,
+        "prompt_cost_per_mtok": 0.09999999999999999,
         "completion_cost_per_mtok": 0.3
       }
     },
@@ -1144,19 +1144,13 @@
         "dimensions": null
       },
       "parameters": {
-        "parallel_tool_calls": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "logprobs": {
+        "repetition_penalty": {
           "availability": "opaque"
         },
         "response_format": {
           "availability": "opaque"
         },
-        "seed": {
+        "include_reasoning": {
           "availability": "opaque"
         },
         "top_k": {
@@ -1165,10 +1159,16 @@
             "min": 0.0
           }
         },
-        "top_logprobs": {
+        "parallel_tool_calls": {
           "availability": "opaque"
         },
-        "logit_bias": {
+        "reasoning": {
+          "availability": "opaque"
+        },
+        "reasoning_effort": {
+          "availability": "opaque"
+        },
+        "seed": {
           "availability": "opaque"
         },
         "presence_penalty": {
@@ -1178,13 +1178,13 @@
             "max": 2.0
           }
         },
+        "logit_bias": {
+          "availability": "opaque"
+        },
         "max_tokens": {
           "availability": "opaque"
         },
-        "min_p": {
-          "availability": "opaque"
-        },
-        "tools": {
+        "structured_outputs": {
           "availability": "opaque"
         },
         "top_p": {
@@ -1194,19 +1194,13 @@
             "max": 1.0
           }
         },
-        "repetition_penalty": {
-          "availability": "opaque"
-        },
-        "reasoning": {
-          "availability": "opaque"
-        },
-        "include_reasoning": {
-          "availability": "opaque"
-        },
-        "reasoning_effort": {
-          "availability": "opaque"
-        },
         "stop": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
+        "min_p": {
           "availability": "opaque"
         },
         "frequency_penalty": {
@@ -1216,7 +1210,10 @@
             "max": 2.0
           }
         },
-        "tool_choice": {
+        "logprobs": {
+          "availability": "opaque"
+        },
+        "top_logprobs": {
           "availability": "opaque"
         },
         "temperature": {
@@ -1225,10 +1222,13 @@
             "min": 0.0,
             "max": 2.0
           }
+        },
+        "tool_choice": {
+          "availability": "opaque"
         }
       },
       "pricing": {
-        "prompt_cost_per_mtok": 0.45,
+        "prompt_cost_per_mtok": 0.44999999999999996,
         "completion_cost_per_mtok": 2.2
       },
       "max_output_tokens": 65535
@@ -1244,8 +1244,15 @@
         "dimensions": null
       },
       "parameters": {
-        "max_tokens": {
+        "tool_choice": {
           "availability": "opaque"
+        },
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
         },
         "top_p": {
           "availability": "mutable",
@@ -1254,10 +1261,10 @@
             "max": 1.0
           }
         },
-        "include_reasoning": {
+        "max_tokens": {
           "availability": "opaque"
         },
-        "tool_choice": {
+        "include_reasoning": {
           "availability": "opaque"
         },
         "reasoning": {
@@ -1268,13 +1275,6 @@
         },
         "seed": {
           "availability": "opaque"
-        },
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
         }
       },
       "pricing": {
@@ -1293,35 +1293,12 @@
         "dimensions": null
       },
       "parameters": {
-        "web_search_options": {
-          "availability": "opaque"
-        },
         "frequency_penalty": {
           "availability": "mutable",
           "range": {
             "min": -2.0,
             "max": 2.0
           }
-        },
-        "seed": {
-          "availability": "opaque"
-        },
-        "tools": {
-          "availability": "opaque"
-        },
-        "presence_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "parallel_tool_calls": {
-          "availability": "mutable",
-          "range": {}
-        },
-        "tool_choice": {
-          "availability": "opaque"
         },
         "temperature": {
           "availability": "mutable",
@@ -1330,11 +1307,43 @@
             "max": 2.0
           }
         },
-        "top_logprobs": {
+        "web_search_options": {
+          "availability": "opaque"
+        },
+        "seed": {
+          "availability": "opaque"
+        },
+        "stop": {
+          "availability": "opaque"
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
+        "tool_choice": {
+          "availability": "opaque"
+        },
+        "logit_bias": {
           "availability": "opaque"
         },
         "max_tokens": {
           "availability": "opaque"
+        },
+        "parallel_tool_calls": {
+          "availability": "mutable",
+          "range": {}
+        },
+        "presence_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
         },
         "top_p": {
           "availability": "mutable",
@@ -1343,16 +1352,7 @@
             "max": 1.0
           }
         },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "logit_bias": {
-          "availability": "opaque"
-        },
-        "stop": {
-          "availability": "opaque"
-        },
-        "response_format": {
+        "top_logprobs": {
           "availability": "opaque"
         },
         "logprobs": {
@@ -1376,6 +1376,9 @@
         "dimensions": null
       },
       "parameters": {
+        "tool_choice": {
+          "availability": "opaque"
+        },
         "seed": {
           "availability": "opaque"
         },
@@ -1386,22 +1389,19 @@
             "max": 2.0
           }
         },
-        "tool_choice": {
-          "availability": "opaque"
-        },
         "max_tokens": {
           "availability": "opaque"
         },
         "tools": {
           "availability": "opaque"
         },
+        "include_reasoning": {
+          "availability": "opaque"
+        },
         "reasoning": {
           "availability": "opaque"
         },
         "stop": {
-          "availability": "opaque"
-        },
-        "include_reasoning": {
           "availability": "opaque"
         }
       },
@@ -1434,13 +1434,7 @@
         "dimensions": null
       },
       "parameters": {
-        "tools": {
-          "availability": "opaque"
-        },
         "stop": {
-          "availability": "opaque"
-        },
-        "reasoning": {
           "availability": "opaque"
         },
         "frequency_penalty": {
@@ -1449,6 +1443,9 @@
             "min": -2.0,
             "max": 2.0
           }
+        },
+        "reasoning": {
+          "availability": "opaque"
         },
         "max_tokens": {
           "availability": "opaque"
@@ -1460,15 +1457,18 @@
             "max": 2.0
           }
         },
+        "include_reasoning": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
         "top_p": {
           "availability": "mutable",
           "range": {
             "min": 0.0,
             "max": 1.0
           }
-        },
-        "include_reasoning": {
-          "availability": "opaque"
         }
       },
       "pricing": {
@@ -1488,17 +1488,32 @@
         "dimensions": null
       },
       "parameters": {
-        "repetition_penalty": {
+        "reasoning": {
           "availability": "opaque"
         },
-        "tool_choice": {
+        "max_tokens": {
           "availability": "opaque"
         },
-        "frequency_penalty": {
+        "top_k": {
           "availability": "mutable",
           "range": {
-            "min": -2.0,
-            "max": 2.0
+            "min": 0.0
+          }
+        },
+        "response_format": {
+          "availability": "opaque"
+        },
+        "tools": {
+          "availability": "opaque"
+        },
+        "structured_outputs": {
+          "availability": "opaque"
+        },
+        "top_p": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 1.0
           }
         },
         "temperature": {
@@ -1508,16 +1523,6 @@
             "max": 2.0
           }
         },
-        "top_p": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 1.0
-          }
-        },
-        "tools": {
-          "availability": "opaque"
-        },
         "presence_penalty": {
           "availability": "mutable",
           "range": {
@@ -1525,31 +1530,26 @@
             "max": 2.0
           }
         },
-        "structured_outputs": {
+        "include_reasoning": {
           "availability": "opaque"
         },
         "stop": {
           "availability": "opaque"
         },
+        "tool_choice": {
+          "availability": "opaque"
+        },
         "seed": {
           "availability": "opaque"
         },
-        "top_k": {
+        "frequency_penalty": {
           "availability": "mutable",
           "range": {
-            "min": 0.0
+            "min": -2.0,
+            "max": 2.0
           }
         },
-        "include_reasoning": {
-          "availability": "opaque"
-        },
-        "reasoning": {
-          "availability": "opaque"
-        },
-        "response_format": {
-          "availability": "opaque"
-        },
-        "max_tokens": {
+        "repetition_penalty": {
           "availability": "opaque"
         }
       },
@@ -1570,21 +1570,14 @@
         "dimensions": null
       },
       "parameters": {
-        "tool_choice": {
+        "tools": {
           "availability": "opaque"
         },
         "max_tokens": {
           "availability": "opaque"
         },
-        "tools": {
+        "reasoning": {
           "availability": "opaque"
-        },
-        "top_p": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 1.0
-          }
         },
         "temperature": {
           "availability": "mutable",
@@ -1596,8 +1589,15 @@
         "include_reasoning": {
           "availability": "opaque"
         },
-        "reasoning": {
+        "tool_choice": {
           "availability": "opaque"
+        },
+        "top_p": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 1.0
+          }
         }
       },
       "pricing": {
@@ -1617,39 +1617,7 @@
         "dimensions": null
       },
       "parameters": {
-        "temperature": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0,
-            "max": 2.0
-          }
-        },
-        "top_k": {
-          "availability": "mutable",
-          "range": {
-            "min": 0.0
-          }
-        },
-        "tool_choice": {
-          "availability": "opaque"
-        },
-        "structured_outputs": {
-          "availability": "opaque"
-        },
-        "include_reasoning": {
-          "availability": "opaque"
-        },
-        "frequency_penalty": {
-          "availability": "mutable",
-          "range": {
-            "min": -2.0,
-            "max": 2.0
-          }
-        },
-        "repetition_penalty": {
-          "availability": "opaque"
-        },
-        "logprobs": {
+        "max_tokens": {
           "availability": "opaque"
         },
         "top_p": {
@@ -1662,10 +1630,29 @@
         "stop": {
           "availability": "opaque"
         },
-        "response_format": {
+        "temperature": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0,
+            "max": 2.0
+          }
+        },
+        "include_reasoning": {
           "availability": "opaque"
         },
-        "min_p": {
+        "tools": {
+          "availability": "opaque"
+        },
+        "reasoning": {
+          "availability": "opaque"
+        },
+        "top_k": {
+          "availability": "mutable",
+          "range": {
+            "min": 0.0
+          }
+        },
+        "repetition_penalty": {
           "availability": "opaque"
         },
         "presence_penalty": {
@@ -1675,22 +1662,35 @@
             "max": 2.0
           }
         },
-        "reasoning": {
+        "seed": {
+          "availability": "opaque"
+        },
+        "tool_choice": {
+          "availability": "opaque"
+        },
+        "frequency_penalty": {
+          "availability": "mutable",
+          "range": {
+            "min": -2.0,
+            "max": 2.0
+          }
+        },
+        "min_p": {
           "availability": "opaque"
         },
         "logit_bias": {
           "availability": "opaque"
         },
-        "tools": {
-          "availability": "opaque"
-        },
         "top_logprobs": {
           "availability": "opaque"
         },
-        "max_tokens": {
+        "structured_outputs": {
           "availability": "opaque"
         },
-        "seed": {
+        "logprobs": {
+          "availability": "opaque"
+        },
+        "response_format": {
           "availability": "opaque"
         }
       },
@@ -1703,7 +1703,7 @@
   ],
   "presets": {
     "budget": {
-      "agentic": "google/gemini-2.5-flash-lite",
+      "agentic": "xiaomi/mimo-v2-flash",
       "coding": "mistralai/devstral-small",
       "embedding": "sentence-transformers/all-MiniLM-L6-v2",
       "summariser": "meta-llama/llama-3.3-70b-instruct",
